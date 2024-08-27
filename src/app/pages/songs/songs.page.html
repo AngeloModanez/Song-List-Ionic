@@ -1,6 +1,12 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>songs</ion-title>
+  <ion-toolbar color="dark">
+    <ion-grid>
+      <ion-row>
+        <ion-icon class="ion-margin-start" button [routerLink]="['/home']" name="arrow-back-outline">
+        </ion-icon>
+        <ion-label class="ion-margin-start">Songs</ion-label>
+      </ion-row>
+    </ion-grid>
   </ion-toolbar>
 </ion-header>
 
@@ -11,10 +17,16 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-list>
-    <ion-item button *ngFor="let song of songs" [routerLink]="['/song-details', song.id]">
-      <ion-label>{{song.title}}</ion-label>
-    </ion-item>
-  </ion-list>
+  <ion-card color="dark">
+    <ion-card-header>
+      <ion-card-title>Song List</ion-card-title>
+    </ion-card-header>
+
+      <ion-list>
+        <ion-item button *ngFor="let song of songs" [routerLink]="['/song-details', song.id]">
+          <ion-label>{{song.title}}</ion-label>
+        </ion-item>
+      </ion-list>
+  </ion-card>
 
 </ion-content>

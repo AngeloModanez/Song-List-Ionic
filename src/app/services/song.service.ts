@@ -12,10 +12,10 @@ export class SongService {
   constructor(private htpp: HttpClient) { }
 
   getSongs(): Observable<Song[]> {
-    return this.htpp.get<Song[]>(`${environment.url}/song`);
+    return this.htpp.get<Song[]>(`${environment.url}/songs`);
   }
 
   getSongById(id: number|string): Observable<Song> {
-    return this.htpp.get<Song>(`${environment.url}/song/${id}`);
+    return this.htpp.get<Song>(`${environment.url}/songs/${id}`);
   }
 }

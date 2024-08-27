@@ -1,6 +1,7 @@
 {
   "songs": [
     {
+      "id": 1,
       "title": "Agno's Song",
       "artist": "Agno",
       "album": "The hate of Agno",
@@ -9,6 +10,7 @@
       "year": 2024
     },
     {
+      "id": 2,
       "title": "Bom é Quando Faz Mal",
       "artist": "Matanza",
       "album": "Música para Beber e Brigar",
@@ -17,6 +19,7 @@
       "year": 2003
     },
     {
+      "id": 3,
       "title": "Stripsearch",
       "artist": "Faith No More",
       "album": "Album of the Year",
